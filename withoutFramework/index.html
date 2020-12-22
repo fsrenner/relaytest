@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia Qualified Voter Listing 2018</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Helvitica, Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table td,
+        table th {
+            border: 1px solid #3c4251;
+            padding: 12px;
+        }
+        table tr:nth-child(even){
+            background-color: #a5afd7;
+        }
+        table tr:nth-child(even){
+            background-color: #fff;
+        }
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #333745;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Philadelphia Qualified Voter Listing 2018</h1>
+    <table id="displayTable" border="1">
+        <thead>
+            <tr>
+                <th>Ward</th>
+                <th>Democrat</th>
+                <th>Republican</th>
+                <th>Other Party</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="displayTableBody">
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!-- We're going to be building a small web app together. The goal here isn't to necessarily finish but to work together 
+Step 1:
+•	Create an index.html with a title of Philadelphia Qualified Voter Listing 2018
+•	Create a table or table like structure with the following column headers
+  ward, democrat, republican, other_party, total 
+
+Step 2:
+•	Add a script to the page that takes the sample json and adds them as rows to the table under the proper columns
+https://gist.github.com/anthonyjso/11115a6e944e2a5f20f7255a93e67fb2
+
+
+From API:
+https://phl.carto.com/api/v2/sql?q=SELECT+*+FROM+qualified_voter_listing_2018_primary_by_ward&filename=qualified_voter_listing_2018_primary_by_ward&format=json&skipfields=cartodb_id
+-->
