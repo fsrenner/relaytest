@@ -4,7 +4,7 @@ import PoliticalDataTable from './PoliticalDataTable';
 export default function App() {
     return(
         <div>
-            <PoliticalDataTable source="remote"/>
+            <PoliticalDataTable />
         </div>
     );
 }
