@@ -1,9 +1,10 @@
 import React from 'react';
+import PoliticalDataTable from './PoliticalDataTable';
 
 export default function App() {
     return(
         <div>
-            Running react...
+            <PoliticalDataTable source="remote"/>
         </div>
-    )
+    );
 }
